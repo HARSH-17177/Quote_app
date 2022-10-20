@@ -30,9 +30,11 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         body: (listResponse.isEmpty)
-            ? const CircularProgressIndicator(
-                color: Colors.blueAccent,
-              )
+            ? const Center(
+              child: CircularProgressIndicator(
+                  color: Colors.blueAccent,
+                ),
+            )
             : ListView.builder(
                 itemCount: listResponse.isEmpty ? 0 : listResponse.length,
                 itemBuilder: (context, index) {
