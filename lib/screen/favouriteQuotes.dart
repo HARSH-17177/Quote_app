@@ -30,6 +30,7 @@ class _FavQuoteState extends State<FavQuote> {
                 onTap: () {
                   setState(() {
                     favouritelist.clear();
+                    UserSimplePreferences.removeX();
                   });
                 },
                 child: const Icon(Icons.delete))
@@ -66,6 +67,7 @@ class _FavQuoteState extends State<FavQuote> {
                                     favouritelist.remove(favouritelist[
                                         index]); //remove the quotes from the list
                                     favourcolor.remove(favourcolor[index]);
+                                    UserSimplePreferences.removeX();
                                   });
                                 },
                                 child: const Icon(

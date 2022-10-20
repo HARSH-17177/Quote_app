@@ -10,4 +10,8 @@ class UserSimplePreferences {
       await _preferences.setStringList(_keylists, lists);
 
   static List<String>? getList() => _preferences.getStringList(_keylists);
+
+  static removeX() async {
+    await _preferences.clear();
+  }
 }
