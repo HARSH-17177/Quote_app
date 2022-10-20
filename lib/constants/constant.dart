@@ -2,6 +2,6 @@ String stringResponse = "";
 Map mapResponse = {};
 Map contentresponse = {};
 List listResponse = [];
-List favouritelist = [];
+List<String> favouritelist = [];
 
 List favourcolor = [];

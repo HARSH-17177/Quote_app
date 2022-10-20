@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:quote_app/constants/constant.dart';
+import 'package:quote_app/preferences.dart';
 import 'package:quote_app/screen/Searchquotes.dart';
 import 'package:quote_app/screen/favouriteQuotes.dart';
 import 'package:quote_app/home.dart';
@@ -79,7 +80,8 @@ class Starter extends StatelessWidget {
       required this.icon,
       required this.name,
       required this.color,
-      required this.loc,required this.tags});
+      required this.loc,
+      required this.tags});
 
   @override
   Widget build(BuildContext context) {

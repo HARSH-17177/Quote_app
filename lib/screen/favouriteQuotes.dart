@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quote_app/constants/constant.dart';
+import 'package:quote_app/preferences.dart';
 
 class FavQuote extends StatefulWidget {
   const FavQuote({super.key});
@@ -9,6 +10,12 @@ class FavQuote extends StatefulWidget {
 }
 
 class _FavQuoteState extends State<FavQuote> {
+  @override
+  void initState() {
+    favouritelist = UserSimplePreferences.getList() ?? [];
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Hero(
@@ -23,7 +30,6 @@ class _FavQuoteState extends State<FavQuote> {
                 onTap: () {
                   setState(() {
                     favouritelist.clear();
-                    
                   });
                 },
                 child: const Icon(Icons.delete))

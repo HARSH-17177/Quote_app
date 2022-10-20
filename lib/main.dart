@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:quote_app/home.dart';
+import 'package:quote_app/preferences.dart';
 import 'package:quote_app/screen/homescreen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await UserSimplePreferences.init();
   runApp(const MyApp());
 }
 
