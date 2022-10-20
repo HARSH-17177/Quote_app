@@ -32,9 +32,9 @@ class CustomSearchDelegate extends SearchDelegate {
 
     for (int i = 0; i < listResponse.length; i++) {
       if (listResponse[i]['author']
-              .toString()
-              .toLowerCase()
-              .contains(query.toLowerCase()) ||
+          .toString()
+          .toLowerCase()
+          .contains(query.toLowerCase())||
           listResponse[i]['content']
               .toString()
               .toLowerCase()
@@ -56,7 +56,7 @@ class CustomSearchDelegate extends SearchDelegate {
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  listResponse[index]['content'],
+                  matchQuery[index],
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
@@ -71,11 +71,12 @@ class CustomSearchDelegate extends SearchDelegate {
   Widget buildSuggestions(BuildContext context) {
     //same as build result
     List matchQuery = [];
+
     for (int i = 0; i < listResponse.length; i++) {
       if (listResponse[i]['author']
-              .toString()
-              .toLowerCase()
-              .contains(query.toLowerCase()) ||
+          .toString()
+          .toLowerCase()
+          .contains(query.toLowerCase())||
           listResponse[i]['content']
               .toString()
               .toLowerCase()
@@ -97,7 +98,7 @@ class CustomSearchDelegate extends SearchDelegate {
               child: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  listResponse[index]['content'],
+                  matchQuery[index],
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
