@@ -1,16 +1,8 @@
-# quote_app
+Quote App :-
 
-A new Flutter project.
+* An app for the quote lovers built using wonderful quote api to filter out your favourite quote ,saved it for future .
+* Search the quote by author name ,category ...
+* Simple UI and user friendly .
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/HARSH-17177/Quote_app/blob/main/ios/1.jpg?raw=true" height ="450" width="220"> <img src="https://github.com/HARSH-17177/Quote_app/blob/main/ios/2.jpg?raw=true" height ="450" width="220"> <img src="https://github.com/HARSH-17177/Quote_app/blob/main/ios/3.jpg?raw=true" height ="450" width="220"> <img src="https://github.com/HARSH-17177/Quote_app/blob/main/ios/4.jpg?raw=true" height ="450" width="220"> <img src="https://github.com/HARSH-17177/Quote_app/blob/main/ios/5.jpg?raw=true" height ="450" width="220"> <img src="https://github.com/HARSH-17177/Quote_app/blob/main/ios/7.jpg?raw=true" height ="450" width="220">
